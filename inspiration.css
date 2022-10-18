@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    width: 30%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 40%;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.box>span {
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    height: 7vh;
+    line-height: 2.6;
+}
+
+
+.quote {
+    margin-top: 10px;
+    position: absolute;
+    border: white 2px solid;
+    width: 50%;
+    right: 10%;
+    top: 20%;
+    height: 300px;
+    align-items: center;    
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+.quote:hover>.overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
